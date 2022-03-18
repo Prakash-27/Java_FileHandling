@@ -11,33 +11,37 @@ public class ReadFileUsingBufferedReader {
 
 		String path = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\Prakash.txt";
 
-		BufferedReader br = null; 
+		FileReader fileReader;
+		
+		BufferedReader br = null;
+
 		try {
+			File file = new File(path);
 
-			File file = new File(path) ;
+			fileReader = new FileReader(file);
 
-			br = new BufferedReader(new FileReader(file));
-			
+			br = new BufferedReader(fileReader);
+
 			System.out.println("File content is : ");
-			
+
 			int c = 0;
-			while((c = br.read()) != -1) {
-				System.out.print((char) c);//Here if we give c mean it will print output in ASCI numbers So that we have to give char with c. 
+			while ((c = br.read()) != -1) {
+				System.out.print((char) c);// Here if we give c mean it will print output in ASCI numbers So that we
+											// have to give char with c.
 			}
 
 		} catch (Exception e) {
-			//fip = new FileInputStream(file); throws FileNotFoundException.
-			//read() throws IOException.
+			// fip = new FileInputStream(file); throws FileNotFoundException.
+			// read() throws IOException.
 			e.printStackTrace();
-		}
-		finally {
+		} finally {
 			try {
 				br.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
-		
+
 	}
 
 }
