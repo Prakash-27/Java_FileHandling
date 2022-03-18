@@ -11,8 +11,9 @@ public class WriteUsingPathNIO {
 
 	public static void main(String[] args) {
 		try {
-			// String location = "WriteUsingPathNIO.txt";
-			String location = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\WriteUsingPathNIO.txt";
+			  String location = "C:\\Users\\Prakash\\eclipse-workspace\\Java_File_Handling\\"
+			  		+ "src\\com\\WriteAFileInJava\\WriteUsingPathNIO.txt";
+			//String location = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\WriteUsingPathNIO.txt";
 			String content = "I have to learn Some New Technology Related to Java.";
 
 			byte Writing_In_WriteUsingPathNIO_File[] = content.getBytes();

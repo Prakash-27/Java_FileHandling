@@ -1,0 +1,52 @@
+Task: Write/Read a JSON File
+============================
+JSON file is very much used in WebServices like Postman , HttpClients etc.
+JSON file are Highly used for Developer to Developing Purpose. 
+So in Testing we used to retrieve Json data from Json File.
+
+1.What is a JSON File?
+JSON--> stands for JavaScript Object Notation.
+JSON--> a file contains,JSON Object with .json file extention.
+---------------------------------------------------------------------------------------------------------------------------
+2. Why do we need JSON?
+In this modern era we have lot of Programming languages.
+Almost all of us use different WebServices in our daily life.
+(eg: Weather Report, Cricket Scores, Currency Conversion, Enquiring Gold rates etc)
+Our Browser is the Point of Contact, to make the request to the Server, receive the response from the server,
+Process the response and render it to user.
+A WebServer may Be implemented with any Programming language like Java, Python etc, Our Browser Can Understand JavaScript.
+So there as to be a Common, language independent data transmission between a WebApplication and Server.  
+---------------------------------------------------------------------------------------------------------------------------  
+JSON is a light weight data-interchange format.
+JSON is self describing and easy to underStand
+JSON is a language independent.
+---------------------------------------------------------------------------------------------------------------------------
+A Simple JSON file Structure
+{
+"Version":4.1.0,
+"name":"Selenium",
+Special features:["It Support Multiple Language Binding.","It is a Best UI Automation Tool in the market"]
+}
+
+Steps to write a json?
+
+Pre requisites: Download and add the Json-Simple jar in your Project.
+Other libraries available to read/write Json: Jackson 2 or Gson
+https://mvnrepository.com/artifact/com.googlecode.json-Simple/json-Simple/1.1.1
+
+1. Create jsonObject
+2. Add key value pairs using put()
+3. if Json Array is needed Create Object for Json Array then add the element to it.
+4. To add the Json Array to jsonObject, use same put().
+5. To write a json to a file, use a file writer or any file writing options (Buffered writer, fileOutputStream, Path)    
+---------------------------------------------------------------------------------------------------------------------------
+Steps to Read a json?
+
+Inverse of the above Operation.
+
+1. Create a Object for Json Parser.
+2. File Reader --> read from Prakash.json
+3. Parse the read file using parse() and store it in a Object.
+4. To get the values, from the Parsed Object, use get().
+5. Now use get() with key to retrieve name and version and store them after type casting 
+6. to fetch the data from JsonArray, using iterator() and iterate them and Print.  

@@ -10,8 +10,9 @@ public class ReadFileUsingBufferedReaderBy_readline_Method {
 
 	public static void main(String[] args) {
 
-		// String location = "ReadFileUsingBufferedReaderBy_readline_Method.txt";
-		String location = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\Prakash.txt";
+		 String location = "C:\\Users\\Prakash\\eclipse-workspace\\Java_File_Handling"
+		 		+ "\\src\\com\\OpenAndReadAFileInJava\\ReadFileUsingBufferedReaderBy_readline_Method.txt";
+		//String location = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\Prakash.txt";
 
 		try {
 			File file = new File(location);

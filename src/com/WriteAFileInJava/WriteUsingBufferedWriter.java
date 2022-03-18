@@ -9,8 +9,9 @@ public class WriteUsingBufferedWriter {
 	// BufferWriter--> Easiest way, performance wise better and widely used.
 
 	public static void main(String[] args) {
-		// String location = "WriteUsingBufferedWriter.txt";
-		String location = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\WriteFiles.txt";
+		 String location = "C:\\Users\\Prakash\\eclipse-workspace\\Java_File_Handling\\"
+		 		+ "src\\com\\WriteAFileInJava\\WriteUsingBufferedWriter.txt";
+		//String location = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\WriteFiles.txt";
 		String content = "Can I able to Learn Java Programming.";
 
 		BufferedWriter bufferedWriter = null;

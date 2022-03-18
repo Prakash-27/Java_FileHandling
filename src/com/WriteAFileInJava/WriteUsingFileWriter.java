@@ -9,8 +9,9 @@ public class WriteUsingFileWriter {
 	// Performance.
 
 	public static void main(String[] args) {
-		// String location = "WriteUsingFileWriter.txt";
-		String location = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\WriteUsingFileWriter.txt";
+		 String location = "C:\\Users\\Prakash\\eclipse-workspace\\Java_File_Handling\\"
+		 		+ "src\\com\\WriteAFileInJava\\WriteUsingFileWriter.txt";
+		//String location = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\WriteUsingFileWriter.txt";
 		String content = "Hello World!!! Iam Prakash!!! I Learning Java!!!";
 
 		FileWriter fileWriter = null;

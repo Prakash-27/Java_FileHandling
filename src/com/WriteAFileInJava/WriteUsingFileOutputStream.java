@@ -10,8 +10,9 @@ public class WriteUsingFileOutputStream {
 
 	public static void main(String[] args) {
 
-		// String location = "WriteUsingFileOutputStream.txt";
-		String location = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\WriteUsingFileOutputStream.txt";
+		 String location = "C:\\Users\\Prakash\\eclipse-workspace\\Java_File_Handling\\"
+		 		+ "src\\com\\WriteAFileInJava\\WriteUsingFileOutputStream.txt";
+		//String location = "C:\\Users\\Prakash\\Documents\\FileHandling Files\\WriteUsingFileOutputStream.txt";
 		String content = "I Almost learned Core Java Concepts.";
 
 		FileOutputStream fileOutputStream = null;
